@@ -1,0 +1,165 @@
+.resume{
+    display: flex;
+    
+}
+.resume-title{
+    margin-left: 50px;
+    margin-top: -20px;
+}
+.resume-title h2{
+  font-size: 42px;
+  font-family: Impact, sans-serif; font-weight: normal;
+  color: var(--dark);
+}
+.nav{
+    width: 300px;
+}
+.nav-container{
+    background-color: var(--light);
+    padding: 1px 0px;
+    border-radius: 1px;
+}
+.edu{
+    display: flex;
+    margin-left: 50px;
+}
+.ug, .pg{
+    width: 300px;
+    margin-top: -15px;
+}
+.ug{
+    margin-left: 50px;
+}
+.education h3{
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 5px;
+    width: 140px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -20px;
+    
+}
+.ug h4, .pg h4{
+    background-color: var(--dark);
+    color: var(--light);
+    width: 260px;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 13px;
+    margin-left: -3px;
+}
+.experience{
+    margin-top: 20px;
+}
+.experience h3{
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 5px;
+    width: 140px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -20px;
+}
+.experience h4{
+    background-color: var(--dark);
+    color: var(--light);
+    width: 200px;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 13px;
+    
+}
+.exp{
+    margin-left: 40px;
+    display: flex;
+    margin-top: -15px;
+}
+.intern{
+    margin-left: 50px;
+}
+
+/* media query for mobile devices */
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    .resume{
+        margin-left: 5px;
+        width: 333px;
+        margin-top: -40px;
+    }
+    .pg{
+        margin-left: -50px;
+        width: 320px!important;
+    }
+    .ug{
+        width: 320px;
+        margin-left: -50px;
+    }
+    .experience h3{
+        width: 80px;
+        margin-top: -20px;
+        font-size: 14px;
+        margin-left: -30px;
+    }
+    .education h3{
+         width: 80px;
+        margin-top: -20px;
+        font-size: 14px;
+    }
+    .ug h4, .pg h4{
+        width: 250px;
+        text-align: center;
+        border-radius: 15px;
+        padding: 8px;
+        font-size: 12px;
+        margin-left: -3px;
+    }
+
+    .date{
+        font-size: 10px!important;
+    }
+    .clg{
+        font-size: 13px;
+    }
+    .activity{
+        font-size: 10px!important;
+    }
+    .education{
+        margin-left: -30px;
+    }
+    .resume-title h2{
+        margin-left: -30px;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .job h4, .intern h4{
+        width: 180px;
+        text-align: center;
+        border-radius: 15px;
+        padding: 8px;
+        font-size: 12px;
+        margin-left: -3px;
+    }
+    .job{
+        margin-left: -70px;
+    }
+    .intern{
+        margin-left: -70px;
+        margin-top: -10px;
+
+    }
+    .job .activity, .intern .activity{
+        width: 310px!important;
+    }
+    .edu, .exp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    
+}

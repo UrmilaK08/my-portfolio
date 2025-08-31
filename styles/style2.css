@@ -1,0 +1,364 @@
+.about-img{
+        width: 200px; 
+        height: 200px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        border: 5px solid white; 
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.3); object-position: top;
+    }
+
+    .about .nav{
+        background-color: var(--light);
+        width: 300px;
+    }
+
+    .img-container{
+        background-color: var(--dark);
+        padding: 20px;
+        padding-left: 42px;
+    }
+.nav-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-container ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin: 25px 0;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  
+}
+
+.nav-container ul li:first-child::before {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+
+}
+
+.nav-container ul li:last-child::after {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+.nav-container ul li:hover {
+  color: white;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container ul li.active {
+  color: white;
+  font-weight: bold;
+}
+
+.vertical-nav {
+  position: relative;
+ left: 80px;
+ top: 80px;
+  height: 50%; 
+  padding: 20px 0;
+}
+
+.vertical-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;               
+  transform: translateX(-50%); 
+  width: 3px;
+  height: 400px;
+  background: #000;  
+  z-index: 0;       
+}
+    .nav-item {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0;
+      color: #f4b400; 
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-item:hover {
+      background: #f4b400;
+      color: #000;
+      transform: scale(1.1);
+    }
+    .nav-item i{
+        z-index: 2;
+    }
+
+.des{
+    margin-left: 70px;
+    margin-top: 50px;
+    width: 700px;
+}
+.des h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.des h3 span {
+  font-weight: 600; 
+}
+
+
+.des h2 {
+  font-size: 42px;
+  font-family: Impact, sans-serif; font-weight: normal;
+  color: var(--dark);
+  letter-spacing: 2px;
+  margin-top: -15px;
+  text-transform: uppercase;
+}
+.des p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+.do h4, .skill h4{
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 5px;
+    border: none;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 100px;
+    
+}
+.about-skills{
+    display: flex;
+}
+.known{
+    width: 400px;
+    
+}
+
+.design {
+    background-color: var(--light);
+    width: 50px;
+    height: 50px;          
+    border-radius: 50%;     
+    text-align: center;      
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: var(--dark);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.content p{
+    font-size: 15px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: -8px;
+}
+.frontend{
+    display: flex;
+    margin-top: 35px;
+}
+
+.backend, .uiux{
+    display: flex;
+    margin-top: 18px;
+}
+.do{
+    margin-left: 70px;
+}
+.skill{
+    margin-left: 10px;
+}
+.s1-row, .s2-row, .s3-row{
+    display: flex;
+}
+
+.s2-row, .s3-row{
+    margin-top: 20px;
+}
+
+.skill-circle {
+  background-color: var(--dark);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.skill-circle i {
+  font-size: 24px;
+  margin-bottom: 5px;
+  transition: color 0.4s ease, transform 0.4s ease;
+  color: var(--light); 
+}
+
+.skill-circle h3 {
+  font-size: 14px;
+  margin: 0;
+  transition: color 0.4s ease;
+}
+
+.skill-circle:hover {
+  background-color: var(--light);
+  color: var(--dark);
+  transform: scale(1.15);
+}
+
+.skill-circle:hover i,
+.skill-circle:hover h3 {
+  color: var(--dark);
+}
+
+@keyframes auto-hover {
+  0%, 66%, 100% {
+    transform: scale(1);
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  33%, 50% {
+    transform: scale(1.15);
+    background-color: var(--light);
+    color: var(--dark);
+  }
+}
+
+.s1.skill-circle {
+  animation: auto-hover 9s infinite;
+}
+.s2.skill-circle {
+  animation: auto-hover 9s infinite;
+  animation-delay: 3s;
+}
+.s3.skill-circle {
+  animation: auto-hover 9s infinite;
+  animation-delay: 6s;
+}
+
+.s1.skill-circle i,
+.s2.skill-circle i,
+.s3.skill-circle i {
+  color: inherit;
+}
+
+/* General layout adjustments for mobile */
+@media (max-width: 768px) {
+    
+    .about{
+       margin-left: 5px;
+       width: 335px;
+       margin-top: 30px;
+    }
+
+    .about .nav {
+        display: none;
+    }
+    .des{
+        margin-left: 20px;
+        width: 310px;
+        text-align: justify;
+    }
+    .des h2{
+        font-size: 28px;
+    }
+    .des p{
+        font-size: 11px;
+    }
+    .des h3{
+        font-size: 17px;
+    }
+    .vertical-nav{
+        display: none;
+    }
+    .about-skills{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .do h4, .skill h4{
+        font-size: 12px;
+        padding: 2px;
+        width: 80px;
+    }
+    .do h4{
+        margin-left: -2px;
+        margin-top: -1px;
+    }
+    .skill h4{
+        margin-left: 15px;
+    }
+    .known p{
+        font-size: 11px;
+        margin-left: 10px;
+        margin-top: -18px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .do{
+        margin-left: 22px;
+    }
+    .design{
+        height: 30px;
+        width: 30px;
+        margin-top: -18px;
+    }
+    .content p{
+      width: 270px;
+    }
+    .design i{
+        font-size: 14px;
+    }
+    .s1{
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+    }
+    .s2{
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+
+    }
+
+    .s1 h3, .s2 h3, .s3 h3{
+        font-size: 11px;
+
+    }
+ 
+ 
+}
