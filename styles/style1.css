@@ -485,4 +485,8 @@ body{
         color: var(--dark);
         transform: scale(1.1);
     }
+
+    .main, .about, .portfolio, .resume, .contact{
+      margin-left: 12px!important;
+    }
 }
